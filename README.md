@@ -33,7 +33,7 @@ To use the docker container, there must be a vicon_bridge ROS node instance runn
 - lon={origin point longitude}
 - vicon_targert={the path to the object's rostopic you want to track ex. "/vicon/AZIMUTH/AZIMUTH"}
 
-The container must have access to a serial line the goes to the GPS port on the vehicle. Currently, the system runs as a privileged container to that it has access to the host device file.
+The container must have access to a serial line that goes to the GPS port on the vehicle. Currently, the system runs as a privileged container to that it has access to the host device file.
 
 Once the variables have been set, you can run the container with:
 
