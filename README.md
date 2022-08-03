@@ -8,7 +8,8 @@ The azimuth GPS system gets postion data from a vicon system and turns it into N
 
 ## Enabling Heading from GPS
 To enable heading From GPS, the following paramaters need to be set in Mission Planner:
-		- AHRS_EKF_TYPE=3
+		
+        - AHRS_EKF_TYPE=3
 		- GPS_TYPE=16
 		- COMPASS_USE=0
 		- COMPASS_USE2=0
@@ -25,7 +26,8 @@ foo@bar:~$ docker build .
 
 ## Running the docker container
 To use the docker container, there must be a vicon_bridge ROS node instance running somewhere on the ROS network. The container takes the following paramaters from a .env file:
-		- serial_port=/dev/ttyUSB0
+		
+        - serial_port=/dev/ttyUSB0
 		- baud=115200
 		- lat={origin point latitude}
 		- lon={origin point longitude}
